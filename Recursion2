@@ -1,0 +1,44 @@
+//Recursion problems 
+
+// 1. print name n times using recursion..
+
+// #include <bits/stdc++.h>
+// using namespace std;
+
+// void namePrinting(int i,int n){
+//      if(i>n) return;
+//      cout<<"Saurabh_aayushi\n";
+//      namePrinting(i+1,n);
+// }
+
+// int main(){
+//     int m;
+//     cout<<"Enter the value: ";
+//     cin>>m;
+//     namePrinting(1,m);
+//     return 0;
+// }
+
+
+
+// 2. print linearly from 1 to n;
+
+#include <bits/stdc++.h>
+using namespace std;
+
+void linear(int i,int n){
+    if(i>n){
+        return;
+    }
+    cout<<i;
+    linear(i+1,n);
+}
+
+int main(){
+    int n; cin>>n;
+    linear(1,n);
+    cout<<"\n";
+    return 0;
+}
+
+
